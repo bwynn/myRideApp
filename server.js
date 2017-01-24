@@ -27,7 +27,7 @@ const OPTIONS = {
 };
 
 // mongo hookup
-mongoose.connect(/*MONGOLAB_URI || */DB.db);
+mongoose.connect(MONGODB_URI || DB.db);
 
 // header config for heroku deployment
 app.use((req, res, next) => {
