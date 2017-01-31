@@ -4,7 +4,7 @@ const Users = React.createClass({
   render: function () {
     return (
       <div>
-        Users Component Rendered
+        Users component
       </div>
     );
   },

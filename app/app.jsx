@@ -7,6 +7,7 @@ const Bike = require('Bike');
 const Profile = require('Profile');
 const Users = require('Users');
 const SignIn = require('SignIn');
+const ProfileDetails = require('ProfileDetails');
 
 // load foundation
 $(document).foundation();

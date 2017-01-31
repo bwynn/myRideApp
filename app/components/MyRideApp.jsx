@@ -6,11 +6,10 @@ const MyRideApp = (props) => {
   return (
     <div>
       <Nav/>
-      <div>
-        {props.children}
-      </div>
+      { props.children }
     </div>
   );
-};
+}
+
 
 module.exports = MyRideApp;

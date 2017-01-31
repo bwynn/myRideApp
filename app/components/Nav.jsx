@@ -2,6 +2,7 @@ const React = require('react');
 const { Link, IndexLink } = require('react-router');
 
 const Nav = React.createClass({
+  // toggle nav drop down 
   render: function () {
     return (
       <div>
