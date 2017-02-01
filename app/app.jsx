@@ -3,11 +3,9 @@ const ReactDOM = require('react-dom');
 const { Route, Router, IndexRoute, hashHistory } = require('react-router');
 
 const MyRideApp = require('MyRideApp');
-const Bike = require('Bike');
 const Profile = require('Profile');
 const Users = require('Users');
 const SignIn = require('SignIn');
-const ProfileDetails = require('ProfileDetails');
 
 // load foundation
 $(document).foundation();
