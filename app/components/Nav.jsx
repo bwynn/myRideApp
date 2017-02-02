@@ -2,11 +2,11 @@ const React = require('react');
 const { Link, IndexLink } = require('react-router');
 
 const Nav = React.createClass({
-  // toggle nav drop down 
+  // toggle nav drop down
   render: function () {
     return (
       <div>
-        <ul className="vertical menu">
+        <ul className="menu">
           <li><IndexLink to="/" activeClassName="active">Login</IndexLink></li>
           <li><Link to="/profile" activeClassName="active">Profile</Link></li>
           <li><Link to="/users" activeClassName="active">Users</Link></li>

@@ -54,15 +54,17 @@ const SignIn = React.createClass({
     };
 
     return (
-      <div>
-        <div>
-          <h1>My Ride</h1>
-        </div>
-        <div>
-          { renderSignupForm() }
-        </div>
-        <div>
-          { renderToggleButton() }
+      <div className="row">
+        <div className="columns large-4 large-offset-4 medium-8 medium-offset-2 small-12">
+          <div>
+            <h1>My Ride</h1>
+          </div>
+          <div>
+            { renderSignupForm() }
+          </div>
+          <div>
+            { renderToggleButton() }
+          </div>
         </div>
       </div>
     );
