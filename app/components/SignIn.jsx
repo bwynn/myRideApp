@@ -55,7 +55,7 @@ const SignIn = React.createClass({
 
     return (
       <div className="row">
-        <div className="columns large-4 large-offset-4 medium-8 medium-offset-2 small-12">
+        <div className="columns large-6 large-offset-3 medium-8 medium-offset-2 small-12">
           <div>
             <h1>My Ride</h1>
           </div>

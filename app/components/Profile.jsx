@@ -34,7 +34,7 @@ const Profile = React.createClass({
     let { user } = this.state;
     return (
       <div className="row">
-        <div className="columns large-4 large-offset-4 medium-8 medium-offset-2 small-12">
+        <div className="columns large-6 large-offset-3 medium-8 medium-offset-2 small-12">
           <ProfileDetails user={ user }/>
           <BikeList bikes={ user.bikes }/>
         </div>

@@ -4,21 +4,17 @@ const Bike = React.createClass({
   render: function () {
     let { model, brand, year, image } = this.props;
     return (
-      <div>
-        <p>{model}</p>
-        <p>{brand}</p>
-        <p>{year}</p>
-        <p>{image}</p>
+      <div className="bike">
+        <div className="bike-thumbnail">
+          <img src={image} alt="bike thumbnail" className="bike-thumb-image"/>
+        </div>
+        <div className="bike-thumbnail-details">
+          <h3>{year} {brand}</h3>
+          <h3>{model}</h3>
+        </div>
       </div>
     );
   },
 });
 
 module.exports = Bike;
-
-/*
-model: 'P 666',
-brand: 'Specialized',
-year: '2013',
-image: '',
- */
