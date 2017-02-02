@@ -23,7 +23,8 @@ const SignupForm = React.createClass({
 
   render: function () {
     return (
-      <div className="login-form">
+      <div className="form">
+        <h1>Sign Up</h1>
         <form onSubmit={ this.handleSubmit }>
           <div className="input-group">
             <input type="text" placeholder="Enter your username" ref="username" required/>
@@ -35,7 +36,7 @@ const SignupForm = React.createClass({
             <input type="password" placeholder="Enter your password" ref="password" required/>
           </div>
           <div className="input-group">
-            <button className="button expanded">Sign Up</button>
+            <button className="button">Sign Up</button>
           </div>
         </form>
       </div>
