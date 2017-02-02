@@ -9,8 +9,10 @@ const Bike = React.createClass({
           <img src={image} alt="bike thumbnail" className="bike-thumb-image"/>
         </div>
         <div className="bike-thumbnail-details">
-          <h3>{year} {brand}</h3>
-          <h3>{model}</h3>
+          <div>
+            <h3><small>{year} {brand}</small></h3>
+            <h3>{model}</h3>
+          </div>
         </div>
       </div>
     );

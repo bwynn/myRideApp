@@ -1,7 +1,7 @@
 .bike-list {
-  margin: 1rem 0;
+  margin: 2rem 0;
   .bike {
-    margin: 1rem 0;
+    margin: 2rem 0;
     height: 10rem;
     border: 2px solid #999;
     display: flex;
@@ -15,12 +15,9 @@
     .bike-thumbnail-details {
       display: flex;
       align-items: center;
-      justify-content: center;
       width: 100%;
-      flex-flow: wrap;
       h3 {
-        width: 100%;
-        padding-left: 2rem;
+        margin-left: 2rem;
       }
     }
   }
