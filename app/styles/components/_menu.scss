@@ -1,0 +1,8 @@
+.menu-component {
+  .menu-container {
+    transition: .3s all ease;
+    &.closed {
+      display: none;
+    }
+  }
+}
