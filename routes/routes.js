@@ -1,6 +1,7 @@
 module.exports = (app, passport) => {
   // DEPENDENCIES ==============================================================
   const userController = require('../controllers/user_controller');
+  const bikeController = require('../controllers/bike_controller');
 
   // AUTHENTICATION ROUTES =====================================================
 
@@ -48,4 +49,19 @@ module.exports = (app, passport) => {
   // delete
   app.delete('/user', userController.deleteUser);
 
+  // bikes
+  // add bike
+  app.post('/add_bike', bikeController.addBike);
+
+  // get all bikes
+  app.get('/get_all_bikes', bikeController.getAllBikes);
+
+  // get bikes by user id
+  app.post('/get_bikes_by_user_id', bikeController.getBikesByUserID);
+
+  // update bike
+  app.put('/update_bike_by_user_id', bikeController.updateBikeByUserID);
+
+  // remove bike
+  app.delete('/remove_bike', bikeController.removeBikeByUserID);
 };
