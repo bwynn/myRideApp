@@ -40,7 +40,7 @@ module.exports = (app, passport) => {
 
   // users
   // get
-  app.get('/user', userController.getUser);
+  app.get('/users', userController.getUser);
 
   // update
   app.put('/user', userController.updateUser);

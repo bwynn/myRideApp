@@ -10,6 +10,7 @@ const Nav = React.createClass({
 
   toggleShowMenu: function () {
     let showMenu = this.state.showMenu;
+
     this.setState({
       showMenu: !showMenu
     });
@@ -22,16 +23,17 @@ const Nav = React.createClass({
 
     return (
       <div className="menu-component">
-        <header className="menu">
+        <header className="main-menu">
           <div className="menu-toggle-button">
             <button className="button" onClick={ this.toggleShowMenu }>Toggle Menu</button>
           </div>
         </header>
         <div className={ handleMenu }>
-          <ul className="menu">
-            <li><IndexLink to="/" activeClassName="active" onClick={ this.toggleShowMenu }>Login</IndexLink></li>
+          <ul className="menu vertical">
+            <li><IndexLink to="/" activeClassName="active" onClick={ this.toggleShowMenu }>Add A Bike</IndexLink></li>
+            <li><Link to="/specs" activeClassName="active" onClick={ this.toggleShowMenu }>Specs</Link></li>
+            <li><Link to="/login" activeClassName="active" onClick={ this.toggleShowMenu }>Login</Link></li>
             <li><Link to="/profile" activeClassName="active" onClick={ this.toggleShowMenu }>Profile</Link></li>
-            <li><Link to="/users" activeClassName="active" onClick={ this.toggleShowMenu }>Users</Link></li>
             <li><Link to="/logout" activeClassName="active" onClick={ this.toggleShowMenu }>Log Out</Link></li>
           </ul>
         </div>

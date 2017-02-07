@@ -1,8 +1,29 @@
 .menu-component {
   .menu-container {
-    transition: .3s all ease;
+    transition: $eased;
     &.closed {
       display: none;
     }
+  }
+  .main-menu {
+    display: flex;
+    background-color: $dark-background;
+    .menu-toggle-button {
+      button {
+        margin: 0;
+      }
+    }
+    > li > a {
+      transition: $eased;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    .active {
+      font-weight: bold;
+    }
+  }
+  .menu-container {
+    background-color: $dark-background;
   }
 }
