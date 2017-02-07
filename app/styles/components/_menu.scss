@@ -1,6 +1,7 @@
 .menu-component {
+  transition: $eased;
   .menu-container {
-    transition: $eased;
+    background-color: $dark-background;
     &.closed {
       display: none;
     }
@@ -22,8 +23,5 @@
     .active {
       font-weight: bold;
     }
-  }
-  .menu-container {
-    background-color: $dark-background;
   }
 }

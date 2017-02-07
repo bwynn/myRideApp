@@ -10,7 +10,7 @@ const AddBike = React.createClass({
   render: function () {
     return (
       <div className="row">
-        <form className="medium-6 columns" onSubmit={ this.handleSubmit }>
+        <form className="medium-6 medium-offset-3 columns" onSubmit={ this.handleSubmit }>
           <div>
             <label>
               What year is your bike?
@@ -38,7 +38,7 @@ const AddBike = React.createClass({
           </div>
           <div>
             <label>
-              Enter your zip code &#40;optional&#41;: 
+              Enter your zip code &#40;optional&#41;:
               <input type="text" placeholder="zip code"/>
             </label>
           </div>
