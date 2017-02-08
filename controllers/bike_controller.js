@@ -1,4 +1,5 @@
 const Bike = require('../models/bike_model');
+const fs = require('fs');
 
 // get all bikes
 exports.getAllBikes = (req, res) => {
@@ -25,7 +26,8 @@ exports.addBike = (req, res) => {
   bike.year = req.body.year;
   bike.brand = req.body.brand;
   bike.model = req.body.model;
-  bike.image = req.body.image;
+  bike.image.data = fs.readFileSync(req.body.image);
+  bike.image.contentType = 'image/png';
   bike.zip = req.body.zip;
   bike.userID = req.body.userID;
   bike.category = req.body.category;

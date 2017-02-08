@@ -7,7 +7,7 @@ const BikeSchema = new Schema({
   model: String,
   category: String,
   zip: String,
-  image: {type: Schema.Types.Mixed},
+  image: { data: Buffer, contentType: String },
   userID: String
 });
 
