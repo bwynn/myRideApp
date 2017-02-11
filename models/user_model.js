@@ -6,7 +6,6 @@ const UserSchema = new Schema({
   email: String,
   password: String,
   accountCreated: {type: Date, default: Date.now},
-  bikes: [{type: Schema.Types.Mixed}],
   username: String
 });
 

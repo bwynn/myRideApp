@@ -14,9 +14,9 @@ exports.getAllBikes = (req, res) => {
 exports.getBikesByUserID = (req, res) => {
   Bike.find({ userID: req.body.userID }, (err, bikes) => {
     if (err) res.send(err);
-  });
 
-  res.json(bikes);
+    res.json(bikes);
+  });
 };
 
 // add bike
@@ -26,7 +26,7 @@ exports.addBike = (req, res) => {
   bike.year = req.body.year;
   bike.brand = req.body.brand;
   bike.model = req.body.model;
-  bike.image.data = fs.readFileSync(req.body.image);
+  // bike.image.data = fs.readFileSync(req.body.image);
   bike.image.contentType = 'image/png';
   bike.zip = req.body.zip;
   bike.userID = req.body.userID;
